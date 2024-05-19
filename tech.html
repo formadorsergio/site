@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Page</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<header>
+    <h1>FS - Formador Sérgio</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tech.html">Tech Tips</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id = 'abt'>
+<h2>Tech Tips</h2>
+    <ul>
+
+        <h3>|1| Formatando um disco no Windows com o Diskpart!</h3>
+            <li>list disk - Comando para listar os discos físicos no pc (PT). | Command used to check physical disks on pc (EN).</li>
+            <li>select disk - Comando para escolher o disco (PT). | Command to choose the disk (EN).</li>
+     <li>clean - Comando para limpar o disco na totalidade (PT). | Command to wipe out all disk (EN).</li>
+<li>create partion primary - Comando para criar uma partição regular (PT). | Command to create a common partition (EN).</li>
+<li>format fs=ntfs quick - Comando para formatar rapidamente o volume no sistema de ficheiros NTFS (PT). | Command to format the volume with NTFS file system (EN).</li>
+        </br>
+        </br>    
+        
+        
+<center><div id="videoContainer">
+        
+</div></center>
+
+</div>
+</ul>
+
+
+<footer>
+    <p>&copy; 2024 FS - Formador Sérgio. All rights reserved.</p>
+</footer>
+
+<script>
+    
+        window.onload = function() {
+
+                var iframe = document.createElement('iframe');
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = "https://www.youtube.com/embed/zKUHoCpGExQ";
+                iframe.frameborder = "0";
+                iframe.allow = "accelerometer; autoplay;";
+                iframe.allowFullscreen = true;
+
+                document.getElementById('videoContainer').appendChild(iframe);
+            
+        };
+
+</script>
+</body>
+</html>
