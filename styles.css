@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('fos.png'); 
+    background-color: #333;
+    color: #3f3f;
+    padding: 62px;
+    text-align: left;
+}
+
+#abt{
+
+
+    background-color: #111;
+    color: #3ffa;
+    padding: 62px;
+    text-align: left;
+
+
+
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#casa {
+
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    background-color:darkred;
+	text-size:40px;
+}
+
+#videoContainer{
+
+
+
+	top:50vh;
+	left:10vh;
+
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.video {
+    margin-right: 15px; 
+}
+
+
+    flex: 1; 
+}
+
+
+.video-center, 
+.video-centerright {
+    flex-basis: 25%; 
+}
+
+.video-right {
+    flex-shrink: 0; 
+}
+
+
+
+#info {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+#services {
+    padding: 10px 82vh;
+    text-align: left;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
