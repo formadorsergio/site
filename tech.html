@@ -52,7 +52,7 @@
 </div></center>
 
        <br></br>
-
+       
         <h3>|2| O Diskpart permite formatar em sistemas de ficheiros NTFS, FAT32 e exFAT. O NTFS é o mais falado no Windows, então vamos ver qual é a diferença entre FAT32 e exFAT, os sistemas de ficheiros que rodam noutros sistemas operacionais como Linux e macOS? (PT)</h3>
 
 O sistema de arquivos FAT32 é mais antigo do que o exFAT. O FAT32 foi introduzido no Windows 95 para substituir o ainda mais antigo FAT. Ele é amplamente compatível e é considerado o formato padrão para dispositivos de armazenamento móveis, como pen drives e cartões de memória. Por outro lado, o exFAT foi projetado como sucessor do FAT32, focado em compatibilidade e na capacidade de gravar arquivos grandes.
@@ -69,10 +69,36 @@ FAT32 is older and has the broadest compatibility across operating systems and d
 FAT32 has significant limitations on file and partition size. It does not support files larger than 4GB and partitions larger than 8TB. In contrast, exFAT allows much larger file and partition sizes. Theoretically, exFAT can support files up to 16 exbibytes (1EiB ~= 1,152,921,504,606,846,976 bytes) and partitions up to 128 pebibytes (1PiB ~= 1,125,899,906,842,624 bytes). 
 FAT32 is less efficient and has fewer features compared to exFAT1. ExFAT includes advanced features similar to NTFS, such as file recovery capability and encryption support. FAT32 is generally used for removable storage devices like USB drives and SD cards. ExFAT, on the other hand, is ideal for external drives intended for multiple operating systems and is better suited for larger file sizes and partitions. 
 
-<br></br>
-<br></br>
+               <br></br>
+               <br></br>
+        <h3>|3| Mudando o estilo de partição do disco para GPT e particionando o disco com o Powershell! (PT)</h3>
         
-<h3>|3| Os Quatro níveis de Controlo de Conta de Utilizador (UAC) no Windows: (PT)</h3>
+O Powershell é uma solução viável ao diskpart com o recurso a cmdlets aquando do momento de formatação. Permite limpar o disco, a conversão de estilos de partição (MBR - Master Boot Record e GPT - GUID Partition Table), criar partições e muito mais! No vídeo abaixo nota-se o pormenor que só após limpeza o disco (Clear-Disk -Number 1 -RemoveData)e não após a criação de qualquer partição, chega o momento então para se poder trocar o estilo de partição (Set-disk -Number 1 -PartitionStyle GPT), neste caso de MBR para GPT. Com o diskpart também é possível, geralmente executa-se este comando (convert gpt) ou (convert mbr), antes do início da instalação do windows, no momento após limpar o disco com recurso à linha de comandos com o diskpart (Shift + F10).
+        <ul>
+        <li>MBR - Limitado a 4 partições primárias. Discos até 2 TB. Vulnerável à corrupção de dados. Compatível com sistemas mais antigos.</li>
+        
+        <li>GPT - Limitado a 128 partições primárias. Discos maiores do que 2 TB. Melhor proteção de dados e opções de recuperação. Geralmente, não é compatível com sistemas mais antigos.</li>
+        </ul>
+
+<h3>|3| Changing Partition Style to GPT and partitioning disk with Powershell!</h3>
+        
+Powershell is a viable solution to diskpart using cmdlets when formatting. It allows you to clean the disk, convert partition styles (MBR - Master Boot Record and GPT - GUID Partition Table), create partitions and much more! In the video below you can see that only after cleaning the disk (Clear-Disk -Number 1 -RemoveData) and not after creating any partition, the time comes to change the partition style (Set-disk -Number 1 -PartitionStyle GPT), in this case from MBR to GPT. With diskpart it is also possible, (convert gpt) or (convert mbr), usually before starting the Windows installation, after cleaning the disk in the command line with diskpart (Shift + F10).
+        <ul>
+        <li>MBR - Limited to 4 primary partitions. Drives up to 2 TB. Vulnerable to data corruption. Compatible with older systems.</li>
+        
+        <li>GPT - Limited to 128 primary partitions. Drives over 2 TB. Provides better data protection and recovery options. Usually not compatible with older systems.</li>
+        </ul>
+    
+        <br>
+        </br>    
+        <br>
+        </br>   
+        
+<center><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@formador.sergio/video/7290274734338526497" data-video-id="7290274734338526497" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@formador.sergio" href="https://www.tiktok.com/@formador.sergio?refer=embed">@formador.sergio</a> Mudando o estilo de partição do disco para GPT e particionando o disco com o Powershell!  <a title="computador" target="_blank" href="https://www.tiktok.com/tag/computador?refer=embed">#Computador</a><a title="pc" target="_blank" href="https://www.tiktok.com/tag/pc?refer=embed">#PC</a> <a title="powershell" target="_blank" href="https://www.tiktok.com/tag/powershell?refer=embed">#Powershell</a> <a title="windows" target="_blank" href="https://www.tiktok.com/tag/windows?refer=embed">#Windows</a> <a title="partiçãodediscos" target="_blank" href="https://www.tiktok.com/tag/parti%C3%A7%C3%A3odediscos?refer=embed">#Partiçãodediscos</a> <a title="ti" target="_blank" href="https://www.tiktok.com/tag/ti?refer=embed">#TI</a>  <a title="tecnologiasdeinformação" target="_blank" href="https://www.tiktok.com/tag/tecnologiasdeinforma%C3%A7%C3%A3o?refer=embed">#TecnologiasdeInformação</a> <a title="utilitários" target="_blank" href="https://www.tiktok.com/tag/utilit%C3%A1rios?refer=embed">#utilitários</a> <a title="tecnologia" target="_blank" href="https://www.tiktok.com/tag/tecnologia?refer=embed">#Tecnologia</a> <a target="_blank" title="♬ som original  - formador.sergio" href="https://www.tiktok.com/music/som-original-formadorsergio-7290275225273518881?refer=embed">♬ som original  - formador.sergio</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></center>
+
+       <br></br>
+        
+<h3>|4| Os Quatro níveis de Controlo de Conta de Utilizador (UAC) no Windows: (PT)</h3>
 <ul>
 <li>(1) |Mais Segurança| Sempre notificar: O UAC notifica-o antes de os programas efetuarem alterações que requerem privilégios de administrador.</li>
 <li>(2) |Recomendado por predefinição| Notificar-me apenas quando os programas/aplicações tentarem efetuar alterações no meu computador: O UAC notifica-o quando os programas tentarem efetuar alterações ou instalar software no seu computador.</li>
@@ -80,7 +106,7 @@ FAT32 is less efficient and has fewer features compared to exFAT1. ExFAT include
 <li>(4) Nunca notificar: O UAC está desativado e não o notificará sobre alterações que requerem privilégios de administrador.</li>
 </ul>        
 
-<h3>|3| The Four User Account Control (UAC) levels in Windows: (EN)</h3>
+<h3>|4| The Four User Account Control (UAC) levels in Windows: (EN)</h3>
 <ul>
 <li>(1) |More Security| Always notify: UAC notifies you before programs make changes that require administrator privileges.</li>
 <li>(2) |Recommended by default| Notify me only when programs/apps try to make changes to my computer: UAC notifies you when programs attempt to make changes or install software on your computer.</li>
@@ -89,7 +115,6 @@ FAT32 is less efficient and has fewer features compared to exFAT1. ExFAT include
 </ul>  
         
 </div>
-</ul>
 
 
 <footer>
