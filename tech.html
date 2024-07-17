@@ -80,7 +80,7 @@ FAT32 is less efficient and has fewer features compared to exFAT1. ExFAT include
         <li>GPT - Limitado a 128 partições primárias. Discos maiores do que 2 TB. Melhor proteção de dados e opções de recuperação. Geralmente, não é compatível com sistemas mais antigos.</li>
         </ul>
 
-        <h3>|3| Changing Partition Style to GPT and partitioning disk with Powershell!</h3>
+        <h3>|3| Changing Partition Style to GPT and partitioning disk with Powershell! (EN)</h3>
 
         Powershell is a viable solution to diskpart, by using cmdlets when formatting. It allows you to clean the disk, convert partition style (MBR - Master Boot Record and GPT - GUID Partition Table), create partitions and much more! In the video below you can see that only after cleaning the disk (Clear-Disk -Number 1 -RemoveData) and not after creating any partition, the time comes to change the partition style (Set-disk -Number 1 -PartitionStyle GPT), in this case from MBR to GPT. With diskpart it is also possible, (convert gpt) or (convert mbr), usually before starting the Windows installation, after cleaning the disk in the command line with diskpart (Shift + F10).
         
