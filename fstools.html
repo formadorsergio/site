@@ -13,51 +13,97 @@
             border:5px solid darkred;
             margin:auto;
         }
+
+        
+        li{text-align:justify;font-family:'monospace';color:bisque;}
+        p{text-align:justify;font-family:'monospace';color:bisque;}
+        .naveg{
+
+            text-align:justify;font-family:Courier New;
+            font-size:16px;
+            font-weight:bold;
+            background-color:#333;
+            transition: font-size 1.2s, background-color 1s;
+        }
+        .naveg:hover{
+
+                   
+            font-size:20px;     
+            background-color: blueviolet;
+            
+        }
+        .naveg:active{
+
+                   
+            font-size:20px;     
+            background-color: darkblue;
+            
+        }
+
+        .lnk1:hover{
+
+                   
+            font-size:20px;     
+            background-color: bisque;
+            
+        }
+        
+        .lnk1:active{
+
+                   
+            font-size:20px;     
+            background-color: rosyBrown;
+            
+        }
+        
     </style>
 </head>
 <body>
-
+    
 <header>
-    <h1>FS - Formador Sérgio</h1>
+    <h1 style="font-family:Courier; font-size:40px;"> FS | Formador Sérgio</h1>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tech.html">Tech Tips</a></li>
-            <li><a href="fstools.html">FSTools</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="aboutpage.html">About</a></li>
+            <li class = 'naveg'><a href="index.html">Home</a></li>
+            <li class = 'naveg'><a href="tech.html">TechTips</a></li>
+            <li class = 'naveg'><a href="webdevelop.html">WebDevTips</a></li>
+            <li class = 'naveg'><a href="fstools.html">FSTools</a></li>
+            <li class = 'naveg'><a href="games.html">Games</a></li>
+            <li class = 'naveg'><a href="aboutpage.html">About</a></li>
         </ul>
     </nav>
 </header>
 
 <div id = 'abt'>
-<h2><center>FS Tools</center></h2><br>
+<center><h2 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:30px;"> FS TOOLS</h2></center><br>
     <ul>
 
-        <h3>FS_RAMCHECK</h3>
 
-            <li>Tool for Checking RAM Memory on PC Windows --> <a href = 'https://github.com/formadorsergio/FS_RAMCHECK/raw/main/FS_RAMCHECK.EXE'>DOWNLOAD NOW!</a></li>        
-<br></br>
+<h3>FS RAM CHECK</h3>
+
+            <li>Tool for Checking RAM Memory on PC Windows --> <a class="lnk1" href = 'https://github.com/formadorsergio/FS_RAMCHECK/raw/main/FS_RAMCHECK.EXE'>DOWNLOAD NOW!</a></li>        
+<br><br>
         <h3>NAT Mask</h3>
 
-            <li>Android App about subnetting --> <a href = 'https://github.com/formadorsergio/NM/raw/main/NM_FS.apk'>DOWNLOAD NOW!</a></li>        
-<br></br>
-        <h3>HexaBinHexaDec</h3>
+            <li>Android App about subnetting --> <a class="lnk1" href = 'https://github.com/formadorsergio/NM/raw/main/NM_FS.apk'>DOWNLOAD NOW!</a></li>        
+<br><br>
+        <h3>Hexa Bin Hexa Dec</h3>
 
-            <li>Android App - Convert Hexadecimal into binary or decimal --> <a href = 'https://github.com/formadorsergio/Hexadec/raw/main/HexaBinHexaDec.apk'>DOWNLOAD NOW!</a></li>        
-<br></br>
-        <h3>Base16toBase10</h3>
+            <li>Android App - Convert Hexadecimal into binary or decimal --> <a class="lnk1" href = 'https://github.com/formadorsergio/Hexadec/raw/main/HexaBinHexaDec.apk'>DOWNLOAD NOW!</a></li>        
+<br><br>
+        <h3>Base 16 to Base 10</h3>
 
-            <li>Android App - Convert Hexadecimal(0x) onto decimal --> <a href = 'https://github.com/formadorsergio/Hexadec/raw/main/base16tobase10.apk'>DOWNLOAD NOW!</a></li>        
-<br></br>
+            <li>Android App - Convert Hexadecimal(0x) onto decimal --> <a class="lnk1" href = 'https://github.com/formadorsergio/Hexadec/raw/main/base16tobase10.apk'>DOWNLOAD NOW!</a></li>        
+<br><br>
     </ul>
-<br></br>
-<br></br>
-<br></br>
-<br></br>  
-    
+<br><br>
+<br><br>
+<br><br>
+<br><br>  
+
+
 <footer>
-    <p>&copy; 2024 FS - Formador Sérgio. All rights reserved.</p>
+<p style="background-color:#333;color:white;font-family:Courier;"><center>&copy; 2024 FS - Formador Sérgio. All rights reserved.</center></p>
 </footer>
 
 <script>
