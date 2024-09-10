@@ -5,21 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
     <link rel="stylesheet" href="styles.css">
-
-<body>
-
-<header>
-    <h1>FS - Formador Sérgio</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tech.html">Tech Tips</a></li>
-	    <li><a href="fstools.html">FSTools</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="aboutpage.html">About</a></li>
-        </ul>
-    </nav>
-</header>
+ 
 <style>
 
 	
@@ -30,16 +16,76 @@
 		background-color:#111122;
 
 	}
+
+    #maças{
+
+        position:absolute;
+        top:40%;
+        color:#555a21;
+        left:15%;
+        font-size:30px;
+        
+    }
+
+    .naveg{
+
+            text-align:justify;font-family:Courier New;
+            font-size:16px;
+            font-weight:bold;
+            background-color:#333;
+            transition: font-size 1.2s, background-color 1s;
+        }
+        .naveg:hover{
+
+                   
+            font-size:20px;     
+            background-color: blueviolet;
+            
+        }
+        .naveg:active{
+
+                   
+            font-size:20px;     
+            background-color: darkblue;
+            
+        }
     
 </style>
+
 </head>
 <body>
-<div id = 'abt'>	<canvas id = 'jogodacobra' width=600 height=500></canvas> </div>
-<script src="minh.js"></script>
-<footer>
-    <p>&copy; 2024 FS - Formador Sérgio. All rights reserved.</p>
-</footer>
+    
+<header>
+    <h1 style="font-family:Courier; font-size:40px; "> FS | Formador Sérgio</h1>
+    <nav>
+        <ul>
+            <li class = 'naveg'><a href="index.html">Home</a></li>
+            <li class = 'naveg'><a href="tech.html">TechTips</a></li>
+                        <li class = 'naveg'><a href="webdevelop.html">WebDevTips</a></li>
+            <li class = 'naveg'><a href="fstools.html">FSTools</a></li>
+            <li class = 'naveg'><a href="games.html">Games</a></li>
+            <li class = 'naveg'><a href="aboutpage.html">About</a></li>
+        </ul>
+    </nav>
+</header>
 
+<div id = 'abt'>	<canvas id = 'jogodacobra' width=500 height=400>
+
+</canvas> 
+
+    <div id = 'maças'></div>
+   
+</div>
+
+<footer>
+<p style="background-color:#333;color:white;font-family:Courier;"><center>&copy; 2024 FS - Formador Sérgio. All rights reserved.</center></p>
+</footer>
+	
+<script>
+    maças.textContent='Apples: ' + 0;
+</script>
+<script src="minh.js"></script>
+	
 </body>
 </html>
 
