@@ -2,6 +2,7 @@
 	var canvas = document.getElementById('jogodacobra');
 	var ctxt = canvas.getContext('2d');
 	var bloco_jogo = 20;
+        var apples = 0;
 	var cobra = [{x:5,y:5,v:0.1,dxx:0,dyy:0},{x:4,y:5,v:0.1,dxx:0,dyy:0},{x:3,y:5,v:0.1,dxx:0,dyy:0},{x:2,y:5,v:0.1,dxx:0,dyy:0}
 
 ,{x:1,y:5,v:0.1,dxx:0,dyy:0},{x:0,y:5,v:0.1,dxx:0,dyy:0}];
@@ -45,7 +46,8 @@
 		maca = {x:Math.floor(Math.random()*canvas.width/bloco_jogo),
 			y:Math.floor(Math.random()*canvas.height/bloco_jogo)	
 		    };
-	
+	            apples+=1;
+	    maças.textContent='Apples: ' + apples; 
 
 		}else{cobra.pop();}
 
@@ -62,5 +64,5 @@
 		if(e.key == 'ArrowRight' && direcaoCobra != 'esq') direcaoCobra = 'dir';
 		if(e.key == 'ArrowUp' && direcaoCobra != 'bai') direcaoCobra = 'cim';
 		if(e.key == 'ArrowDown' && direcaoCobra != 'cim') direcaoCobra = 'bai';
-        e.preventDefault();
+        	e.preventDefault();
 	});
