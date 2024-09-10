@@ -5,121 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Page</title>
     <link rel="stylesheet" href="styles.css"> 
+
+<style>
+
+        li{text-align:justify;font-family:'monospace';color:bisque;}
+        p{text-align:justify;font-family:'monospace';color:bisque;}
+        .naveg{
+
+            text-align:justify;font-family:Courier New;
+            font-size:16px;
+            font-weight:bold;
+            background-color:#333;
+            transition: font-size 1.2s, background-color 1s;
+        }
+        .naveg:hover{
+
+                   
+            font-size:20px;     
+            background-color: blueviolet;
+            
+        }
+        .naveg:active{
+
+                   
+            font-size:20px;     
+            background-color: darkblue;
+            
+        }
+
+        .estilo{
+
+            font-size:20px;background-color:rosybrown;
+            transition: font-size: 3s, background:3s;
+             
+        }
+
+        .estilo:hover{
+             
+            font-size:30px;background-color:aqua;
+        }
+ 
+</style>
+
 </head>
+
+    
 <body>
 
 <header>
-    <h1>FS - Formador Sérgio</h1>
+    <h1 style="font-family:Courier; font-size:40px; "> FS | Formador Sérgio</h1>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tech.html">Tech Tips</a></li>
-            <li><a href="fstools.html">FSTools</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="aboutpage.html">About</a></li>
+            <li class = 'naveg'><a href="index.html">Home</a></li>
+            <li class = 'naveg'><a href="tech.html">TechTips</a></li>
+            <li class = 'naveg'><a href="webdevelop.html">WebDevTips</a></li>
+            <li class = 'naveg'><a href="fstools.html">FSTools</a></li>
+            <li class = 'naveg'><a href="games.html">Games</a></li>
+            <li class = 'naveg'><a href="aboutpage.html">About</a></li>
         </ul>
     </nav>
 </header>
 
 <div id = 'abt'>
-<h2><center>Tech Tips</center></h2>
-    <br></br>
+<center><h2 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:30px;"> Tech Tips</h2></center>
+    <br>
     <ul>
 
-        <h3>|1| Formatando um disco no Windows com o Diskpart! (PT)</h3>
-            <li>list disk - Comando para listar os discos físicos no pc. </li>
-            <li>select disk - Comando para escolher o disco.</li>
-            <li>clean - Comando para limpar o disco na totalidade.</li>
-            <li>create partition primary - Comando para criar uma partição regular. </li>
-            <li>format fs=ntfs quick - Comando para formatar rapidamente o volume no sistema de ficheiros NTFS. Nota: Poderíamos ainda acrescentar o parâmetro "label" para atribuir uma etiqueta. </li>
-            <li>assign letter e - Atribuindo uma letra, neste exemplo a letra 'e', e montando rapidamente o disco.</li>
+        <h3 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:20px;">|1| Formatando um disco no Windows com o Diskpart! (PT) | Formatting a disk in Windows with Diskpart! (EN)</h3>
+            <li> Comando para listar os discos físicos no pc. Command used to check physical disks on pc. </li>                                 
+            <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;"> list disk </p> 
+            <li>Comando para escolher o disco. Command to choose the disk.</li>
+        <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;"> select disk </p> 
+            <li>Comando para limpar o disco na totalidade. Command to wipe out all disk.</li>
+                <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;">clean </p> 
+            <li>Comando para criar uma partição regular. Command to create a common partition.</li>
+                        <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;">create partition primary </p> 
+            <li>Comando para formatar rapidamente o volume no sistema de ficheiros NTFS. Command to format the volume with NTFS file system. <br>Nota: Poderíamos ainda acrescentar o parâmetro "label" para atribuir uma etiqueta. Note: We could also add the label parameter to assign a label.</li>
+                        <p class="estilo" style=" color:darkblue;padding: 0 0 0 30%;">format fs=ntfs quick </p>         
+            <li>Atribuindo uma letra, neste exemplo a letra 'e', e montando rapidamente o disco. </li>
+                                <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;"> assign letter e </p> 
+         
 
-        <h3>|1| Formatting a disk in Windows with Diskpart! (EN)</h3>
-            <li>list disk - Command used to check physical disks on pc.</li>
-            <li>select disk - Command used to choose the disk.</li>
-            <li>clean - Command used to wipe out all disk.</li>
-            <li>create partition primary - Command used to create a common partition.</li>
-            <li>format fs=ntfs quick - Command used to format the volume with NTFS file system. Note: We could also add the "label" parameter to assign a label.</li>
-            <li>assign letter e - Assigning a letter, in this example the letter 'e', and quickly mounting the disk.</li>
-        
         <br>
-        </br>    
+        <br>    
         <br>
-        </br>   
-        
+ 
 <center><div id="videoContainer">
         
 </div></center>
 
-       <br></br>
+       <br><br>
        
-        <h3>|2| O Diskpart permite formatar em sistemas de ficheiros NTFS, FAT32 e exFAT. O NTFS é o mais falado no Windows, então vamos ver qual é a diferença entre FAT32 e exFAT, os sistemas de ficheiros que rodam noutros sistemas operacionais como Linux e macOS? (PT)</h3>
+        <h3 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:20px;">|2| O Diskpart permite formatar em sistemas de ficheiros NTFS, FAT32 e exFAT. O NTFS é o mais falado no Windows, então vamos ver qual é a diferença entre FAT32 e exFAT, os sistemas de ficheiros que rodam noutros sistemas operacionais como Linux e macOS? (PT)</h3>
 
-O sistema de arquivos FAT32 é mais antigo do que o exFAT. O FAT32 foi introduzido no Windows 95 para substituir o ainda mais antigo FAT. Ele é amplamente compatível e é considerado o formato padrão para dispositivos de armazenamento móveis, como pen drives e cartões de memória. Por outro lado, o exFAT foi projetado como sucessor do FAT32, focado em compatibilidade e na capacidade de gravar arquivos grandes.
+<p style="text-align:justify;"> O sistema de arquivos FAT32 é mais antigo do que o exFAT. O FAT32 foi introduzido no Windows 95 para substituir o ainda mais antigo FAT. Ele é amplamente compatível e é considerado o formato padrão para dispositivos de armazenamento móveis, como pen drives e cartões de memória. Por outro lado, o exFAT foi projetado como sucessor do FAT32, focado em compatibilidade e na capacidade de gravar arquivos grandes.
 O FAT32 é mais antigo e tem a maior compatibilidade entre os sistemas operacionais e dispositivos. Ele pode ser lido e gravado por quase todos os sistemas operacionais e a maioria dos dispositivos com uma porta USB. Por outro lado, o exFAT também é compatível com muitos dispositivos, mas não todos.
 O FAT32 tem limitações significativas no tamanho do arquivo e da partição. Ele não suporta arquivos maiores do que 4GB e partições maiores do que 8TB. Em contraste, o exFAT permite tamanhos de arquivo e partição muito maiores. Teoricamente, o exFAT pode suportar arquivos de até 16 exbibytes (1EiB ~= 1,152,921,504,606,846,976 bytes) e partições de até 128 pebibytes (1PiB ~= 1,125,899,906,842,624 bytes).
 O FAT32 é menos eficiente e tem menos recursos em comparação com o exFAT1. O exFAT possui recursos avançados semelhantes ao NTFS, como a capacidade de recuperar arquivos e suporte para criptografia.
-O FAT32 é geralmente usado para dispositivos de armazenamento removíveis, como pen drives e cartões SD. O exFAT, por outro lado, é ideal para unidades externas destinadas a vários sistemas operacionais e é melhor para tamanhos de arquivo e partições maiores.
+O FAT32 é geralmente usado para dispositivos de armazenamento removíveis, como pen drives e cartões SD. O exFAT, por outro lado, é ideal para unidades externas destinadas a vários sistemas operacionais e é melhor para tamanhos de arquivo e partições maiores.</p>
 
 
-<h3>|2| The Diskpart allows formatting in NTFS, FAT32, and exFAT file systems. NTFS is the most commonly used in Windows, so let’s see what the difference is between FAT32 and exFAT, the file systems that run on other operating systems like Linux and macOS? (EN)</h3>
+<h3 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:20px;">|2| The Diskpart allows formatting in NTFS, FAT32, and exFAT file systems. NTFS is the most commonly used in Windows, so let’s see what the difference is between FAT32 and exFAT, the file systems that run on other operating systems like Linux and macOS? (EN)</h3>
 
-The FAT32 file system is older than exFAT. FAT32 was introduced in Windows 95 to replace the even older FAT. It is widely compatible and considered the standard format for mobile storage devices such as USB drives and memory cards. On the other hand, exFAT was designed as the successor to FAT32, focusing on compatibility and the ability to handle large files. 
+<p style="text-align:justify;">The FAT32 file system is older than exFAT. FAT32 was introduced in Windows 95 to replace the even older FAT. It is widely compatible and considered the standard format for mobile storage devices such as USB drives and memory cards. On the other hand, exFAT was designed as the successor to FAT32, focusing on compatibility and the ability to handle large files. 
 FAT32 is older and has the broadest compatibility across operating systems and devices. It can be read and written by almost all operating systems and most devices with a USB port. Conversely, exFAT is also compatible with many devices, but not all. 
 FAT32 has significant limitations on file and partition size. It does not support files larger than 4GB and partitions larger than 8TB. In contrast, exFAT allows much larger file and partition sizes. Theoretically, exFAT can support files up to 16 exbibytes (1EiB ~= 1,152,921,504,606,846,976 bytes) and partitions up to 128 pebibytes (1PiB ~= 1,125,899,906,842,624 bytes). 
-FAT32 is less efficient and has fewer features compared to exFAT1. ExFAT includes advanced features similar to NTFS, such as file recovery capability and encryption support. FAT32 is generally used for removable storage devices like USB drives and SD cards. ExFAT, on the other hand, is ideal for external drives intended for multiple operating systems and is better suited for larger file sizes and partitions. 
+FAT32 is less efficient and has fewer features compared to exFAT1. ExFAT includes advanced features similar to NTFS, such as file recovery capability and encryption support. FAT32 is generally used for removable storage devices like USB drives and SD cards. ExFAT, on the other hand, is ideal for external drives intended for multiple operating systems and is better suited for larger file sizes and partitions. </p>
 
-               <br></br>
-               <br></br>
-        <h3>|3| Mudando o estilo de partição do disco para GPT e particionando o disco com o Powershell! (PT)</h3>
+               
+               <br><br>
+        <h3 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:20px;">|3| Mudando o estilo de partição do disco para GPT e particionando o disco com o Powershell! (PT)</h3>
         
-        O Powershell é uma solução viável ao diskpart com o recurso a cmdlets aquando do momento de formatação. Permite limpar o disco, a conversão de estilos de partição (MBR - Master Boot Record e GPT - GUID Partition Table), criar partições e muito mais! No vídeo abaixo nota-se o pormenor que só após limpeza o disco (Clear-Disk -Number 1 -RemoveData)e não após a criação de qualquer partição, chega o momento então para se poder trocar o estilo de partição (Set-disk -Number 1 -PartitionStyle GPT), neste caso de MBR para GPT. Com o diskpart também é possível, geralmente executa-se este comando (convert gpt) ou (convert mbr), antes do início da instalação do windows, no momento após limpar o disco com recurso à linha de comandos com o diskpart (Shift + F10).
+<p style="text-align:justify;">O Powershell é uma solução viável ao diskpart com o recurso a cmdlets aquando do momento de formatação. Permite limpar o disco, a conversão de estilos de partição (MBR - Master Boot Record e GPT - GUID Partition Table), criar partições e muito mais! No vídeo abaixo nota-se o pormenor que só após limpeza o disco:<br> 
+    <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;">Clear-Disk -Number 1 -RemoveData </p>
+        <p style="text-align:justify;">e não após a criação de qualquer partição, chega o momento então para se poder trocar o estilo de partição:<br>
+                <p class="estilo"  style="color:darkblue;padding: 0 0 0 30%;">Set-disk -Number 1 -PartitionStyle GPT </p>
+    <p>neste caso de MBR para GPT. Com o diskpart também é possível, geralmente executa-se este comando antes do início da instalação do windows, no momento após limpar o disco com recurso à linha de comandos com o diskpart (Shift + F10):
+         <p class="estilo" style="color:darkred;padding: 0 0 0 30%;">convert gpt</p>
+ 
         <ul>
         <li>MBR - Limitado a 4 partições primárias. Discos até 2 TB. Vulnerável à corrupção de dados. Compatível com sistemas mais antigos.</li>
         
         <li>GPT - Limitado a 128 partições primárias. Discos maiores do que 2 TB. Melhor proteção de dados e opções de recuperação. Geralmente, não é compatível com sistemas mais antigos.</li>
         </ul>
 
-        <h3>|3| Changing Partition Style to GPT and partitioning disk with Powershell! (EN)</h3>
-
-        Powershell is a viable solution to diskpart, by using cmdlets when formatting. It allows you to clean the disk, convert partition style (MBR - Master Boot Record and GPT - GUID Partition Table), create partitions and much more! In the video below you can see that only after cleaning the disk (Clear-Disk -Number 1 -RemoveData) and not after creating any partition, the time comes to change the partition style (Set-disk -Number 1 -PartitionStyle GPT), in this case from MBR to GPT. With diskpart it is also possible, (convert gpt) or (convert mbr), usually before starting the Windows installation, after cleaning the disk in the command line with diskpart (Shift + F10).
+<h3 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:20px;">|3| Changing Partition Style to GPT and partitioning disk with Powershell! (EN)</h3>
         
+<p style="text-align:justify;">Powershell is a viable solution to diskpart, by using cmdlets when formatting. It allows you to clean the disk, convert partition style (MBR - Master Boot Record and GPT - GUID Partition Table), create partitions and much more! In the video below you can see that only after cleaning the disk: 
+                <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;">Clear-Disk -Number 1 -RemoveData </p>
+    <p>and not after creating any partition, the time comes to change the partition style: <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;">Set-disk -Number 1 -PartitionStyle GPT </p><p>in this case from MBR to GPT. With diskpart it is also possible, (convert gpt) or (convert mbr), usually before starting the Windows installation, after cleaning the disk in the command line with diskpart (Shift + F10).</p> 
+
+         <p class="estilo" style="color:darkred;padding: 0 0 0 30%;">convert gpt</p>
+ 
         <ul>
         <li>MBR - Limited to 4 primary partitions. Drives up to 2 TB. Vulnerable to data corruption. Compatible with older systems.</li>
         
         <li>GPT - Limited to 128 primary partitions. Drives over 2 TB. Provides better data protection and recovery options. Usually not compatible with older systems.</li>
         </ul>
-    
+  
         <br>
-        </br>    
-        <br>
-        </br>   
+        <br>   
         
 <center><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@formador.sergio/video/7290274734338526497" data-video-id="7290274734338526497" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@formador.sergio" href="https://www.tiktok.com/@formador.sergio?refer=embed">@formador.sergio</a> Mudando o estilo de partição do disco para GPT e particionando o disco com o Powershell!  <a title="computador" target="_blank" href="https://www.tiktok.com/tag/computador?refer=embed">#Computador</a><a title="pc" target="_blank" href="https://www.tiktok.com/tag/pc?refer=embed">#PC</a> <a title="powershell" target="_blank" href="https://www.tiktok.com/tag/powershell?refer=embed">#Powershell</a> <a title="windows" target="_blank" href="https://www.tiktok.com/tag/windows?refer=embed">#Windows</a> <a title="partiçãodediscos" target="_blank" href="https://www.tiktok.com/tag/parti%C3%A7%C3%A3odediscos?refer=embed">#Partiçãodediscos</a> <a title="ti" target="_blank" href="https://www.tiktok.com/tag/ti?refer=embed">#TI</a>  <a title="tecnologiasdeinformação" target="_blank" href="https://www.tiktok.com/tag/tecnologiasdeinforma%C3%A7%C3%A3o?refer=embed">#TecnologiasdeInformação</a> <a title="utilitários" target="_blank" href="https://www.tiktok.com/tag/utilit%C3%A1rios?refer=embed">#utilitários</a> <a title="tecnologia" target="_blank" href="https://www.tiktok.com/tag/tecnologia?refer=embed">#Tecnologia</a> <a target="_blank" title="♬ som original  - formador.sergio" href="https://www.tiktok.com/music/som-original-formadorsergio-7290275225273518881?refer=embed">♬ som original  - formador.sergio</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></center>
 
-       <br></br>
+       <br><br>
         
-<h3>|4| Os Quatro níveis de Controlo de Conta de Utilizador (UAC) no Windows: (PT)</h3>
-<ul>
-<li>(1) |Mais Segurança| Sempre notificar: O UAC notifica-o antes de os programas efetuarem alterações que requerem privilégios de administrador.</li>
-<li>(2) |Recomendado por predefinição| Notificar-me apenas quando os programas/aplicações tentarem efetuar alterações no meu computador: O UAC notifica-o quando os programas tentarem efetuar alterações ou instalar software no seu computador.</li>
-<li>(3) Notificar-me apenas quando os programas/aplicações tentarem efetuar alterações no meu computador (sem escurecer o ecrã): Semelhante ao modo anterior, mas sem o efeito de escurecimento do ecrã.</li>
-<li>(4) Nunca notificar: O UAC está desativado e não o notificará sobre alterações que requerem privilégios de administrador.</li>
-</ul>        
+<h3 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:20px;">|4| Os Quatro níveis de Controlo de Conta de Utilizador (UAC) no Windows: (PT)</h3>
+<ol>
+<li>Sempre notificar: O UAC notifica-o antes de os programas efetuarem alterações que requerem privilégios de administrador (Máxima Segurança).</li>
+<li>Notificar-me apenas quando os programas/aplicações tentarem efetuar alterações no meu computador: O UAC notifica-o quando os programas tentarem efetuar alterações ou instalar software no seu computador (Recomendado por predefinição).</li>
+<li>Notificar-me apenas quando os programas/aplicações tentarem efetuar alterações no meu computador (sem escurecer o ecrã): Semelhante ao modo anterior, mas sem o efeito de escurecimento do ecrã.</li>
+<li>Nunca notificar: O UAC está desativado e não o notificará sobre alterações que requerem privilégios de administrador.</li>
+</ol>        
 
-<h3>|4| The Four User Account Control (UAC) levels in Windows: (EN)</h3>
-<ul>
-<li>(1) |More Security| Always notify: UAC notifies you before programs make changes that require administrator privileges.</li>
-<li>(2) |Recommended by default| Notify me only when programs/apps try to make changes to my computer: UAC notifies you when programs attempt to make changes or install software on your computer.</li>
-<li>(3) Notify me only when programs/apps try to make changes to my computer (without dimming the screen): Similar to the previous mode, but without the screen dimming effect.</li>
-<li>(4) Never notify: UAC is disabled and won’t notify you about changes that require administrator privileges.</li>
-</ul>  
+<h3 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:20px;">|4| The Four User Account Control (UAC) levels in Windows: (EN)</h3>
+<ol>
+<li>Always notify: UAC notifies you before programs make changes that require administrator privileges (Highest Security). </li>
+<li>Notify me only when programs/apps try to make changes to my computer: UAC notifies you when programs attempt to make changes or install software on your computer (Recommended by default) .</li>
+<li>Notify me only when programs/apps try to make changes to my computer (without dimming the screen): Similar to the previous mode, but without the screen dimming effect.</li>
+<li>Never notify: UAC is disabled and won’t notify you about changes that require administrator privileges.</li>
+</ol>  
         
 </div>
 
 
+
 <footer>
-    <p>&copy; 2024 FS - Formador Sérgio. All rights reserved.</p>
+<p style="background-color:#333;color:white;font-family:Courier;"><center>&copy; 2024 FS - Formador Sérgio. All rights reserved.</center></p>
 </footer>
 
 <script>
