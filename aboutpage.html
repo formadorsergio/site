@@ -14,20 +14,60 @@
             text-align:center;
             border-radius:25%;
         }
-        
+
+    
+
+        li{text-align:justify;font-family:'monospace';color:bisque;}
+        p{text-align:justify;font-family:'monospace';color:bisque;}
+        .naveg{
+
+            text-align:justify;font-family:Courier New;
+            font-size:16px;
+            font-weight:bold;
+            background-color:#333;
+            transition: font-size 1.2s, background-color 1s;
+        }
+        .naveg:hover{
+
+                   
+            font-size:20px;     
+            background-color: blueviolet;
+            
+        }
+        .naveg:active{
+
+                   
+            font-size:20px;     
+            background-color: darkblue;
+            
+        }
+
+        .estilo{
+
+            font-size:20px;background-color:rosybrown;
+            transition: font-size: 3s, background:3s;
+             
+        }
+
+        .estilo:hover{
+             
+            font-size:30px;background-color:aqua;
+        }
+ 
     </style>
 </head>
 <body>
 
 <header>
-    <h1>FS - Formador Sérgio</h1>
+    <h1 style="font-family:Courier; font-size:40px; "> FS | Formador Sérgio</h1>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tech.html">Tech Tips</a></li>
-            <li><a href="fstools.html">FSTools</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="aboutpage.html">About</a></li>
+            <li class = 'naveg'><a href="index.html">Home</a></li>
+            <li class = 'naveg'><a href="tech.html">TechTips</a></li>
+            <li class = 'naveg'><a href="webdevelop.html">WebDevTips</a></li>
+            <li class = 'naveg'><a href="fstools.html">FSTools</a></li>
+            <li class = 'naveg'><a href="games.html">Games</a></li>
+            <li class = 'naveg'><a href="aboutpage.html">About</a></li>
         </ul>
     </nav>
 </header>
@@ -42,25 +82,16 @@
         <h3>Windows Tips</h3></br>
         <li>Powershell</li>
         <li>Command line</li>
-        <li>Windows Utilities (GUI)</li>    
-        <br>
-        
-        <h3>Soon Linux Tips!</h3></br>
-        </ul>
-<br>
-<br>
-</br>
-</br>
-
-
-
-
+        <li>Windows Utilities (GUI)</li>
+        <li>Bash Linux</li>
+        <li>GNU Desktop Linux</li>    
+</div>
 <div id = 'cardinfo'>
-Sérgio is a technical IT professional with expertise in PowerShell scripting and web development!
+Sérgio is a technical IT professional with expertise in PowerShell scripting and Full Stack Web Development!
 </div>
 
 <footer>
-    <p>&copy; 2024 FS - Formador Sérgio. All rights reserved.</p>
+<p style="background-color:#333;color:white;font-family:Courier;"><center>&copy; 2024 FS - Formador Sérgio. All rights reserved.</center></p>
 </footer>
 
 </body>
