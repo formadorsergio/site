@@ -120,7 +120,7 @@ FAT32 is less efficient and has fewer features compared to exFAT1. ExFAT include
                <br><br>
         <h3 style="text-decoration: underline #aaaa56; text-shadow: -1px 0px green; font-weight: 1000; font-family: 'monospace';font-size:20px;">|3| Mudando o estilo de partição do disco para GPT e particionando o disco com o Powershell! (PT)</h3>
         
-<p style="text-align:justify;">O Powershell é uma solução viável ao diskpart com o recurso a cmdlets aquando do momento de formatação. Permite limpar o disco, a conversão de estilos de partição (MBR - Master Boot Record e GPT - GUID Partition Table), criar partições e muito mais! No vídeo abaixo nota-se o pormenor que só após limpeza o disco:<br> 
+<p style="text-align:justify;">O Powershell é uma solução viável ao diskpart com o recurso a cmdlets aquando do momento de formatação. Permite limpar o disco, a conversão de estilos de partição (MBR - Master Boot Record e GPT - GUID Partition Table), criar partições e muito mais! No vídeo abaixo nota-se o pormenor de que só após a limpeza do disco:<br> 
     <p class="estilo" style="color:darkblue;padding: 0 0 0 30%;">Clear-Disk -Number 1 -RemoveData </p>
         <p style="text-align:justify;">e não após a criação de qualquer partição, chega o momento então para se poder trocar o estilo de partição:<br>
                 <p class="estilo"  style="color:darkblue;padding: 0 0 0 30%;">Set-disk -Number 1 -PartitionStyle GPT </p>
